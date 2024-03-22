@@ -1,0 +1,31 @@
+class Solution
+{
+    static ArrayList<ArrayList<Integer>> ans;
+    static void printPath(Node curr, int sum,int suming,ArrayList<Integer> path) 
+    { 
+        if (curr == null) 
+            return; 
+              
+        suming += curr.data; 
+        path.add(curr.data); 
+      
+        if (suming == sum)  
+        { 
+             ans.add(new ArrayList<>(path));
+        } 
+  
+        if (curr.left != null)
+            printPath(curr.left, sum, suming, new ArrayList<>(path));
+
+        if (curr.right != null)
+            printPath(curr.right, sum, suming, new ArrayList<>(path));
+  
+} 
+    public static ArrayList<ArrayList<Integer>> printPaths(Node root, int sum)
+    {
+        ArrayList<Integer> path = new ArrayList<>(); 
+        ans = new ArrayList<>();
+        printPath(root, sum, 0, path); 
+        return ans;
+    }
+}

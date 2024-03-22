@@ -1,0 +1,21 @@
+if u know how many iterations to do , use for loop
+else use while loop
+
+-> variables can be initialized inside the loop
+
+1. even number program ( in loop i+=2)
+
+write a java prgm to find frst 6 odd numbers divisible by 7
+
+start = (start%2)?start+1:start;
+i=start;i<=n;i+=2
+if(c<6)
+if(i%7==0)
+print
+c++
+else
+break
+
+
+
+

@@ -1,0 +1,82 @@
+import java.util.Scanner;
+
+//new switch type
+class switch_case
+{
+	public static void main(String args[])
+	{
+		Scanner x = new Scanner(System.in);
+		String day = x.next();
+		
+		switch(day)
+		{
+			case "monday","thursday" -> System.out.println("7am");
+			case "tuesday","wednesday" -> System.out.println("6am");
+			case "friday" -> System.out.println("5am");
+			case "saturday" -> System.out.println("9am");
+		}
+	}
+
+}
+
+//another switch type
+class switch_case
+{
+	public static void main(String args[])
+	{
+		Scanner x = new Scanner(System.in);
+		String day = x.next();
+		
+		String time = switch(day)  //the output of the switch statement is return like a method and saved in the time variable
+		{
+			case "monday","thursday" -> "7am";
+			case "tuesday","wednesday" -> "6am";
+			case "friday" -> "5am";
+			case "saturday" -> "9am";
+			default null;
+		}
+		System.out.print(time);
+	}
+
+}
+
+class solution
+{
+	public static void main(String args[])
+	{
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
