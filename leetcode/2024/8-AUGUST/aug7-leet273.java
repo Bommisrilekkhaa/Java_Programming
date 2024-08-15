@@ -24,7 +24,7 @@ class Solution {
         if (num == 0) {
             return "";
         } else if (num < 20) {
-            return LESS_THAN_20[num] + " ";
+            return LESS_THAN_20[num] + " ";aug
         } else if (num < 100) {
             return TENS[num / 10] + " " + helper(num % 10);
         } else {
